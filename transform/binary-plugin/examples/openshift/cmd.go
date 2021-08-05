@@ -13,7 +13,7 @@ var logger logrus.FieldLogger
 func main() {
 	// TODO: add plumbing for logger in the cli-library and instantiate here
 	// TODO: add plumbing for passing flags in the cli-library
-	cli.RunAndExit(cli.NewCustomPlugin("OpenshiftCustomPlugin", "V1", nil, Run))
+	cli.RunAndExit(cli.NewCustomPlugin("OpenshiftCustomPlugin", "v1", nil, Run))
 }
 
 func Run(u *unstructured.Unstructured, extras map[string]string) (transform.PluginResponse, error) {
